@@ -17,6 +17,10 @@ public class BasicRTSAlternative extends SelfContainedPluginAlt
 	{
 		super();
 	}
+        public BasicRTSAlternative(String name){
+            this();
+            setName(name);
+        }
 	/* (non-Javadoc)
 	 * @see com.rma.model.Computable#isComputable()
 	 */

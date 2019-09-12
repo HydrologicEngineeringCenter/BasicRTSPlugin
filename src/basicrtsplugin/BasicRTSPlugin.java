@@ -25,7 +25,12 @@ import hec2.rts.ui.RtsTabType;
  */
 public class BasicRTSPlugin extends AbstractSelfContainedPlugin<BasicRTSAlternative> implements RtsPlugin, CreatablePlugin
 {
-	private BasicRTSAlternative _computingAlt;
+    public static final String PLUGINNAME = "Basic RTS Plugin";
+    private static final String PLUGIN_VERSION = "1.0.0";
+    private static final String PLUGIN_DIRECTORY = "BasicRTSPlugin";
+    private static final String PLUGIN_EXTENSION = ".bp";	
+    
+    private BasicRTSAlternative _computingAlt;
 
 	public BasicRTSPlugin()
 	{
@@ -54,7 +59,7 @@ public class BasicRTSPlugin extends AbstractSelfContainedPlugin<BasicRTSAlternat
 
     @Override
     protected BasicRTSAlternative newAlternative(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new BasicRTSAlternative(string);
     }
 
     @Override
@@ -69,7 +74,7 @@ public class BasicRTSPlugin extends AbstractSelfContainedPlugin<BasicRTSAlternat
 
     @Override
     protected NewObjectFactory getAltObjectFactory() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new BasicRTSAlternativeFactory(this);
     }
 
     @Override
