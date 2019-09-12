@@ -1,2 +1,2 @@
-# BasicPlugin
-The original BasicPlugin in the plugin documentation guide for HEC-WAT
+# BasicRTSPlugin
+The original BasicRTSPlugin that will operate as a guide for how to create plugins for CWMS/RTS
