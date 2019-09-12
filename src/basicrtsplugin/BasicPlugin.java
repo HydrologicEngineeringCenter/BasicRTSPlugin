@@ -74,7 +74,8 @@ public class BasicPlugin extends AbstractSelfContainedWatPlugin<BasicAlternative
     }
     @Override
     protected NewObjectFactory getAltObjectFactory() {
-        return new BasicRTSAlternativeFactory(this);
+        throw new UnsupportedOperationException("Not supported yet.");
+        //return new BasicRTSAlternativeFactory(this);
     }
     @Override
     public List<DataLocation> getDataLocations(ModelAlternative ma, int i) {

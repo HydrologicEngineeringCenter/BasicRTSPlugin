@@ -17,8 +17,8 @@ import javax.swing.JComponent;
  * @author WatPowerUser
  */
 public class BasicRTSAlternativeFactory extends AbstractNewObjectFactory  implements NewObjectFactory{
-    private BasicPlugin _plugin;
-    public BasicRTSAlternativeFactory(BasicPlugin plugin){
+    private BasicRTSPlugin _plugin;
+    public BasicRTSAlternativeFactory(BasicRTSPlugin plugin){
         super(BasicRTSPluginI18n.getI18n(BasicRTSPluginMessages.Bundle_Name));
         _plugin = plugin;
     }
@@ -36,7 +36,7 @@ public class BasicRTSAlternativeFactory extends AbstractNewObjectFactory  implem
     @Override
     public Object createObject(JComponent jc) {
         GenericNewObjectPanel panel = (GenericNewObjectPanel) jc;
-        BasicAlternative alt = new BasicAlternative();
+        BasicRTSAlternative alt = new BasicRTSAlternative();
         alt.setName(panel.getSelectedName());
         alt.setDescription(panel.getSelectedDescription());
         alt.setFile(FileManagerImpl.getFileManager().getFile(panel.getSelectedFile().getPath() + RmaFile.separator + alt.getName() + _plugin.getAltFileExtension()));
