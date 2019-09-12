@@ -13,13 +13,14 @@ import java.util.ResourceBundle;
  *
  * @author WatPowerUser
  */
-public class BasicPluginMessages {
-    public static final String Bundle_Name = BasicPluginI18n.BUNDLE_NAME;
+public class BasicRTSPluginMessages {
+    public static final String Bundle_Name = BasicRTSPluginI18n.BUNDLE_NAME;
     private static final ResourceBundle RESOURCE_BUNDLE = ResourceBundle.getBundle(Bundle_Name);
-    public static final String Plugin_Name = "BasicPlugin.Name";
-    public static final String Plugin_Description = "BasicPlugin.Description";
-    public static final String Plugin_Short_name = "BasicPlugin.ShortName";
-    private BasicPluginMessages(){
+    public static final String PLUGIN_NAME = "BasicPlugin.Name";
+    public static final String PLUGIN_DESCRIPTION = "BasicPlugin.Description";
+    public static final String PLUGIN_SHORTNAME = "BasicPlugin.ShortName";
+    public static final String PLUGIN_ICON = "UNKNOWN";
+    private BasicRTSPluginMessages(){
         super();
     }
     public static String getString(String key){

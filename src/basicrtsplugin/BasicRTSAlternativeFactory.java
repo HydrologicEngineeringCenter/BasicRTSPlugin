@@ -16,10 +16,10 @@ import javax.swing.JComponent;
  *
  * @author WatPowerUser
  */
-public class BasicAlternativeFactory extends AbstractNewObjectFactory  implements NewObjectFactory{
+public class BasicRTSAlternativeFactory extends AbstractNewObjectFactory  implements NewObjectFactory{
     private BasicPlugin _plugin;
-    public BasicAlternativeFactory(BasicPlugin plugin){
-        super(BasicPluginI18n.getI18n(BasicPluginMessages.Bundle_Name));
+    public BasicRTSAlternativeFactory(BasicPlugin plugin){
+        super(BasicRTSPluginI18n.getI18n(BasicRTSPluginMessages.Bundle_Name));
         _plugin = plugin;
     }
     @Override
