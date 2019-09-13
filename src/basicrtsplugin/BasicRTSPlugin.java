@@ -64,12 +64,12 @@ public class BasicRTSPlugin extends AbstractSelfContainedPlugin<BasicRTSAlternat
 
     @Override
     protected String getAltFileExtension() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return PLUGIN_EXTENSION;
     }
 
     @Override
     public String getPluginDirectory() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return PLUGIN_DIRECTORY;
     }
 
     @Override
@@ -89,7 +89,7 @@ public class BasicRTSPlugin extends AbstractSelfContainedPlugin<BasicRTSAlternat
 
     @Override
     public String getVersion() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return PLUGIN_VERSION;
     }
 
     @Override
